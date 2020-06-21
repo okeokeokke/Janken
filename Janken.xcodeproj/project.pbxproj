@@ -15,6 +15,10 @@
 		E85E041B249E188F00104CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85E0419249E188F00104CD3 /* LaunchScreen.storyboard */; };
 		E85E0426249E189000104CD3 /* JankenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85E0425249E189000104CD3 /* JankenTests.swift */; };
 		E85E0431249E189000104CD3 /* JankenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85E0430249E189000104CD3 /* JankenUITests.swift */; };
+		E85E0442249E1CDB00104CD3 /* jankenChoki.png in Resources */ = {isa = PBXBuildFile; fileRef = E85E043F249E1CDB00104CD3 /* jankenChoki.png */; };
+		E85E0443249E1CDB00104CD3 /* jankenGu.png in Resources */ = {isa = PBXBuildFile; fileRef = E85E0440249E1CDB00104CD3 /* jankenGu.png */; };
+		E85E0444249E1CDB00104CD3 /* jankenPa.png in Resources */ = {isa = PBXBuildFile; fileRef = E85E0441249E1CDB00104CD3 /* jankenPa.png */; };
+		E85E0446249E216900104CD3 /* jankenText1.png in Resources */ = {isa = PBXBuildFile; fileRef = E85E0445249E216900104CD3 /* jankenText1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E85E042C249E189000104CD3 /* JankenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JankenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85E0430249E189000104CD3 /* JankenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenUITests.swift; sourceTree = "<group>"; };
 		E85E0432249E189000104CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85E043F249E1CDB00104CD3 /* jankenChoki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jankenChoki.png; sourceTree = "<group>"; };
+		E85E0440249E1CDB00104CD3 /* jankenGu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jankenGu.png; sourceTree = "<group>"; };
+		E85E0441249E1CDB00104CD3 /* jankenPa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jankenPa.png; sourceTree = "<group>"; };
+		E85E0445249E216900104CD3 /* jankenText1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jankenText1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		E85E040D249E188C00104CD3 /* Janken */ = {
 			isa = PBXGroup;
 			children = (
+				E85E043E249E1CDB00104CD3 /* ジャンケン素材１ */,
 				E85E040E249E188C00104CD3 /* AppDelegate.swift */,
 				E85E0410249E188C00104CD3 /* SceneDelegate.swift */,
 				E85E0412249E188C00104CD3 /* ViewController.swift */,
@@ -126,6 +135,17 @@
 				E85E0432249E189000104CD3 /* Info.plist */,
 			);
 			path = JankenUITests;
+			sourceTree = "<group>";
+		};
+		E85E043E249E1CDB00104CD3 /* ジャンケン素材１ */ = {
+			isa = PBXGroup;
+			children = (
+				E85E043F249E1CDB00104CD3 /* jankenChoki.png */,
+				E85E0440249E1CDB00104CD3 /* jankenGu.png */,
+				E85E0441249E1CDB00104CD3 /* jankenPa.png */,
+				E85E0445249E216900104CD3 /* jankenText1.png */,
+			);
+			path = "ジャンケン素材１";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +255,10 @@
 				E85E041B249E188F00104CD3 /* LaunchScreen.storyboard in Resources */,
 				E85E0418249E188F00104CD3 /* Assets.xcassets in Resources */,
 				E85E0416249E188C00104CD3 /* Main.storyboard in Resources */,
+				E85E0442249E1CDB00104CD3 /* jankenChoki.png in Resources */,
+				E85E0446249E216900104CD3 /* jankenText1.png in Resources */,
+				E85E0443249E1CDB00104CD3 /* jankenGu.png in Resources */,
+				E85E0444249E1CDB00104CD3 /* jankenPa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
