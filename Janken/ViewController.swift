@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var number1: Int!
     @IBOutlet var jankenComputerImageView: UIImageView!
     @IBOutlet var jankenUserImageView: UIImageView!
+    @IBOutlet var jankenShouriHantei: UILabel!
     var numberComputerGu: Int!
     var numberComputerChoki: Int!
     var numberComputerPa: Int!
@@ -32,13 +33,13 @@ class ViewController: UIViewController {
         number1 = Int.random(in: 0...2)
         if number1 == 0 {
             jankenComputerImageView.image = UIImage(named: "jankenGu")
-            numberComputerGu = numberComputerGu + 1
+            //numberComputerGu = numberComputerGu + 1
         }else if number1 == 1 {
             jankenComputerImageView.image = UIImage(named: "jankenChoki")
-            numberComputerChoki = numberComputerChoki + 1
+            //numberComputerChoki = numberComputerChoki + 1
         }else {
             jankenComputerImageView.image = UIImage(named: "jankenPa")
-            numberComputerPa = numberComputerPa + 1
+            //numberComputerPa = numberComputerPa + 1
         }
         
     }
@@ -46,20 +47,47 @@ class ViewController: UIViewController {
     @IBAction func jankenGu() {
         jankenUserImageView.image = UIImage(named: "jankenGu")
         self.jankenComputer()
-        numberUserGu = numberUserGu + 1
+        //numberUserGu = numberUserGu + 1
+        if number1 == 0{
+            jankenShouriHantei.text = "あいこ"
+        }
+        else if number1 == 1{
+            jankenShouriHantei.text = "勝ち"
+        }
+        else if number1 == 2{
+            jankenShouriHantei.text = "負け"
+        }
     }
     
     @IBAction func jankenChoki() {
         jankenUserImageView.image = UIImage(named: "jankenChoki")
         self.jankenComputer()
-        numberUserChoki = numberUserChoki + 1
+        //numberUserChoki = numberUserChoki + 1
+        if number1 == 0{
+            jankenShouriHantei.text = "負け"
+        }
+        else if number1 == 1{
+            jankenShouriHantei.text = "あいこ"
+        }
+        else if number1 == 2{
+            jankenShouriHantei.text = "勝ち"
+        }
     }
     
     
     @IBAction func jankenPa() {
         jankenUserImageView.image = UIImage(named: "jankenPa")
         self.jankenComputer()
-        numberComputerPa = numberUserPa + 1
+        //numberComputerPa = numberUserPa + 1
+        if number1 == 0{
+            jankenShouriHantei.text = "勝ち"
+        }
+        else if number1 == 1{
+            jankenShouriHantei.text = "負け"
+        }
+        else if number1 == 2{
+            jankenShouriHantei.text = "あいこ"
+        }
     }
 
 
